@@ -2,6 +2,21 @@ body {
     background: #E5E5E5;
 }
 
+button {
+    border: none;
+    width: 172px;
+    height: 216px;
+    margin: 17px 16px 0px 0px;
+    background: #FFFFFF;
+    flex-shrink: 0;
+    padding: 14px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -4px;
+    text-align: left;
+}
+
 .top {
     position: fixed;
     top:0;
@@ -26,17 +41,27 @@ body {
     font-size: 26px;
 }
 
-.prato {
+.options {
     display: flex;
     overflow: hidden;
 }
 
-.options {
-    width: 172px;
-    height: 216px;
-    margin: 17px 16px 0px 0px;
-    background: #FFFFFF;
-    flex-shrink: 0;
+.food {
+    width: 144px;
+    height: 87px;
+    margin: 4px 0px;
+}
+
+.title {
+    font-weight: 700;
+    margin: 4px 0px;
+}
+
+.description {
+    font-weight: 300;
+    color: #A6A6A6;
+    margin: 10px 0;
+    height:32px;
 }
 
 .bottom {
@@ -62,4 +87,16 @@ body {
     font-family: 'Roboto';
     color: #FFFFFF;
     text-align: center;
+}
+
+.selected {
+    border: 7px #32B72F solid;
+    padding: 0 0 0 7px;
+}
+
+.close-order {
+    background: #32B72F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

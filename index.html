@@ -20,55 +20,159 @@
             Primeiro, seu prato
         </div>
     
-        <div class="prato">
-            <div class="options">
-    
-            </div>   
-            <div class="options">
-                
-            </div> 
-            <div class="options">
-                
-            </div>      
+        <div class="options dishes">
+            <button class="pizza" onclick="selectDish('.pizza')">
+                <img src="imagens/pizza.jpg" class="food"/>
+                <div class="title">
+                    Pizza  de calabresa  
+                </div>
+
+                <div class="description">
+                    Pizza de calabresa tamanho M    
+                </div>
+
+                <div class="title">
+                    R$ 32,90   
+                </div>
+            </butto>   
+            <button class="xtudo" onclick="selectDish('.xtudo')">
+                <img src="imagens/xtudo.jpg" class="food"/>
+                <div class="title">
+                    X-tudo  
+                </div>
+
+                <div class="description">
+                    Pão, carne, queijo, bacon, ovo e salada   
+                </div>
+
+                <div class="title">
+                    R$ 21,90   
+                </div>
+            </button> 
+            <button class="hotdog" onclick="selectDish('.hotdog')">
+                <img src="imagens/hotdog.jpg" class="food"/>
+                <div class="title">
+                    Hot dog 
+                </div>
+
+                <div class="description">
+                    Pão, salsicha, milho, queijo, batata palha   
+                </div>
+
+                <div class="title">
+                    R$ 12,90   
+                </div>
+            </button>      
         </div>
     
         <div class="instruction">
             Agora, sua bebida
         </div>
     
-        <div class="prato">
-            <div class="options">
-    
-            </div>   
-            <div class="options">
-                
-            </div> 
-            <div class="options">
-                
-            </div>      
+        <div class="options drinks">
+            <button class="guarana" onclick="selectDrink('.guarana')">
+                <img src="imagens/guarana.jpg" class="food"/>
+                <div class="title">
+                    Guaraná Antarctica 
+                </div>
+
+                <div class="description">
+                    Latinha 350 ml    
+                </div>
+
+                <div class="title">
+                    R$ 5,90   
+                </div>
+            </button>   
+            <button class="coca" onclick="selectDrink('.coca')">
+                <img src="imagens/coca.jpg" class="food"/>
+                <div class="title">
+                    Coca cola
+                </div>
+
+                <div class="description">
+                    Latinha 350 ml    
+                </div>
+
+                <div class="title">
+                    R$ 6,90   
+                </div>
+            </button> 
+            <button class="suco" onclick="selectDrink('.suco')">
+                <img src="imagens/suco.jpg" class="food"/>
+                <div class="title">
+                    Suco de Laranja 
+                </div>
+
+                <div class="description">
+                    Copo 400 ml    
+                </div>
+
+                <div class="title">
+                    R$ 7,90   
+                </div>
+            </button>      
         </div>
 
         <div class="instruction">
             Por fim, sua sobremesa
         </div>
     
-        <div class="prato">
-            <div class="options">
-    
-            </div>   
-            <div class="options">
-                
-            </div> 
-            <div class="options">
-                
-            </div>      
+        <div class="options desserts">
+            <button class="acai" onclick="selectDessert('.acai')">
+                <img src="imagens/açai.jpg" class="food"/>
+                <div class="title">
+                    Açaí 500 ml 
+                </div>
+
+                <div class="description">
+                    Açaí com 4 complementos   
+                </div>
+
+                <div class="title">
+                    R$ 16,90   
+                </div>
+            </button>   
+            <button class="sundae" onclick="selectDessert('.sundae')">
+                <img src="imagens/sundae.jpg" class="food"/>
+                <div class="title">
+                    Sundae 300 ml
+                </div>
+
+                <div class="description">
+                    Sabor chocolate
+                </div>
+
+                <div class="title">
+                    R$ 8,90   
+                </div>
+            </button> 
+            <button class="mousse" onclick="selectDessert('.mousse')">
+                <img src="imagens/mousse.jpg" class="food"/>
+                <div class="title">
+                    Mousse 300 ml
+                </div>
+
+                <div class="description">
+                    Sabor maracujá
+                </div>
+
+                <div class="title">
+                    R$ 8,90   
+                </div>
+            </button>      
         </div>
     </div>    
 
     <div class="bottom">
-        <div class="finish-items">
+        <div class="finish-items" onclick="closeOrder('.finish-items')">
             <p class="bottom-instruction">Selecione os 3 itens</br>para fechar o pedido</p>      
         </div>
     </div>
+
+    <script src="scripts.js">
+
+    </script>
+
 </body>
 </html>
