@@ -10,19 +10,15 @@ let dessertPrice;
 let totalPrice;
 
 function selectDish(classButton) {
-
-    //pega quem tem a classe .selected
-    const select = document.querySelector(".dishes .selected");
-
-    //tirar a classe selected de quem já tem, exceto se ngm tem ainda
-    if (select !== null) {
+    const select = document.querySelector(".dishes .selected"); //pega quem tem a classe .selected
+    
+    if (select !== null) {                        //se tiver alguem com .select, tira a classe
         select.classList.remove('selected');
     }
     else {
         counter ++;
     }
-   //adicionar a borda verde no botao
-    const button = document.querySelector(classButton);
+    const button = document.querySelector(classButton); //adicionar a borda verde no botao
     button.classList.add('selected');
 
     if(counter === 3) {
@@ -128,7 +124,7 @@ function closeOrder(classButton) {
 }
 
 function sendOrder () {
-    let celular = "5527999428967";
+    let celular = "5527996031184";
     let texto = "Olá, gostaria de fazer o pedido: \n - Prato: " + dish + "\n - Bebida: " + drink + "\n - Sobremesa: " + dessert + "\n Total: R$ " + totalPrice + "\n \n Nome: " + nome + "\n Endereço: " + address;
     texto = window.encodeURIComponent(texto);
 

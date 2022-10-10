@@ -43,18 +43,26 @@ button {
 
 .options {
     display: flex;
-    overflow: hidden;
+    overflow: scroll;
 }
 
-.food {
+ion-icon {
+    color: green;
+    display: none;
+}
+
+.container img {
     width: 144px;
     height: 87px;
     margin: 4px 0px;
+    border-radius: 4px;
 }
 
 .text {
     font-weight: 700;
     margin: 4px 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .description {
@@ -90,8 +98,12 @@ button {
 }
 
 .selected {
-    border: 7px #32B72F solid;
+    border: 5px #32B72F solid;
     padding: 0 0 0 7px;
+}
+
+.selected ion-icon {
+    display: block;
 }
 
 .close-order {
