@@ -90,8 +90,7 @@ function closeOrder(classButton) {
     if(counter === 3) {
         nome = prompt("Digite o seu nome:");
         address = prompt("Digite o seu endereço:");
-    }
-
+        
     const color = document.querySelector(".content");
     color.classList.add('opacity');
 
@@ -121,6 +120,7 @@ function closeOrder(classButton) {
 
     const total = document.querySelector(".total");
     total.innerHTML =  "R$ " + totalPrice;
+    }
 }
 
 function sendOrder () {
@@ -130,4 +130,12 @@ function sendOrder () {
 
     window.open("https://wa.me/" + celular + "?text=" + texto);
 
+}
+
+function cancel () {
+    const color = document.querySelector(".content");
+    color.classList.remove('opacity');
+
+    const close = document.querySelector(".confirm");
+    close.classList.add('invisible');
 }
