@@ -52,7 +52,7 @@ button {
     margin: 4px 0px;
 }
 
-.title {
+.text {
     font-weight: 700;
     margin: 4px 0px;
 }
@@ -99,4 +99,59 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.confirm {
+    position: fixed;
+    top: calc(50vh - 188.5px);
+    left: calc(50vw - 176.5px);
+    background: #50D074;
+    font-family: 'Roboto';
+    font-size: 22px;
+    color: #FFFFFF;
+    width: 377px;
+    height: 353px;
+    z-index: 1;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 21px;
+    border-radius: 9px;
+}
+
+.invisible {
+    display: none;
+}
+
+.opacity {
+    opacity: 0.2;
+}
+
+.bold {
+    font-weight: bold;;
+}
+
+.top-space {
+    margin-bottom: 28px;
+}
+
+.order {
+    margin: 13px 25px 0px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ok {
+    background: #FFFFFF;   
+    color: #50D074;
+    font-size: 22px;
+    width: 329px;
+    height: 52px;
+    margin: 24px auto 0 auto;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.cancel {
+    text-align: center;
+    margin: 30px auto;
 }
