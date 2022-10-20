@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iFood</title>
-    <link href="reset.css" rel="stylesheet" />
-    <link href="estilo.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto" />
 </head>
@@ -18,8 +18,8 @@
     
         <div class="container">
             <div class="instruction">Primeiro, seu prato</div>
-            <div class="options dishes">
-                <button class="pizza" onclick="selectDish('.pizza')">
+            <ul class="options dishes">
+                <li class="pizza" onclick="selectDish('.pizza','dishes')">
                     <img src="imagens/pizza.jpg">
                     <div class="text dish-item">Pizza  de calabresa</div>
                     <div class="description">Pizza de calabresa tamanho M</div>
@@ -27,9 +27,9 @@
                         <p>R$ <span class="dish-price">32.90</span></p>
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>
                     </div>
-                </button> 
+                </li> 
 
-                <button class="xtudo" onclick="selectDish('.xtudo')">
+                <li class="xtudo" onclick="selectDish('.xtudo')">
                     <img src="imagens/xtudo.jpg"/>
                     <div class="text dish-item">X-tudo</div>
                     <div class="description">Pão, carne, queijo, bacon, ovo e salada</div>
@@ -37,9 +37,9 @@
                         <p>R$ <span class="dish-price">21.90</span></p>
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>   
                     </div>
-                </button> 
+                </li> 
 
-                <button class="hotdog" onclick="selectDish('.hotdog')">
+                <li class="hotdog" onclick="selectDish('.hotdog')">
                     <img src="imagens/hotdog.jpg">
                     <div class="text dish-item">Hot dog</div>
                     <div class="description">Pão, salsicha, milho, queijo, batata palha</div>
@@ -47,13 +47,13 @@
                         <p>R$ <span class="dish-price">12.90</span></p>
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>  
                     </div>
-                </button>      
-            </div>
+                </li>      
+            </ul>
     
             <div class="instruction">Agora, sua bebida</div>
         
-            <div class="options drinks">
-                <button class="guarana" onclick="selectDrink('.guarana')">
+            <ul class="options drinks">
+                <li class="guarana" onclick="selectDrink('.guarana')">
                     <img src="imagens/guarana.jpg"/>
                     <div class="text drink-item">Guaraná Antarctica </div>
                     <div class="description">Latinha 350 ml</div>
@@ -61,9 +61,9 @@
                         <p>R$ <span class="drink-price">5.90</span></p>
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>  
                     </div>
-                </button>   
+                </li>   
 
-                <button class="coca" onclick="selectDrink('.coca')">
+                <li class="coca" onclick="selectDrink('.coca')">
                     <img src="imagens/coca.jpg"/>
                     <div class="text drink-item">Coca cola</div>
                     <div class="description">Latinha 350 ml    </div>
@@ -71,9 +71,9 @@
                         <p>R$ <span class="drink-price">6.90</span></p>
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>
                     </div>
-                </button> 
+                </li> 
 
-                <button class="suco" onclick="selectDrink('.suco')">
+                <li class="suco" onclick="selectDrink('.suco')">
                     <img src="imagens/suco.jpg"/>
                     <div class="text drink-item">Suco de Laranja </div>
                     <div class="description">Copo 400 ml</div>
@@ -81,13 +81,13 @@
                         <p>R$ <span class="drink-price">7.90</span></p>
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>  
                     </div>
-                </button>      
-            </div>
+                </li>      
+            </ul>
     
             <div class="instruction">Por fim, sua sobremesa</div>
         
-            <div class="options desserts">
-                <button class="acai" onclick="selectDessert('.acai')">
+            <ul class="options desserts">
+                <li class="acai" onclick="selectDessert('.acai')">
                     <img src="imagens/açai.jpg"/>
                     <div class="text dessert-item">Açaí 500 ml </div>
                     <div class="description">Açaí com 4 complementos</div>
@@ -95,9 +95,9 @@
                         <p>R$ <span class="dessert-price">16.90</span></p>
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>   
                     </div>
-                </button> 
+                </li> 
 
-                <button class="sundae" onclick="selectDessert('.sundae')">
+                <li class="sundae" onclick="selectDessert('.sundae')">
                     <img src="imagens/sundae.jpg"/>
                     <div class="text dessert-item">Sundae 300 ml</div>
                     <div class="description">Sabor chocolate</div>
@@ -105,9 +105,9 @@
                         <p>R$ <span class="dessert-price">9.90</span></p>
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>   
                     </div>
-                </button> 
+                </li> 
 
-                <button class="mousse" onclick="selectDessert('.mousse')">
+                <li class="mousse" onclick="selectDessert('.mousse')">
                     <img src="imagens/mousse.jpg"/>         
                     <div class="text dessert-item">Mousse 300 ml</div>
                     <div class="description">Sabor maracujá</div>
@@ -115,8 +115,8 @@
                         <p>R$ <span class="dessert-price">8.90</span></p> 
                         <ion-icon name="checkmark-circle-sharp"></ion-icon>  
                     </div>
-                </button>      
-            </div>
+                </li>      
+            </ul>
         </div>    
     
         <div class="bottom">
@@ -145,10 +145,10 @@
             </button>
         <div class="cancel bold" onclick="cancel()">
             Cancelar
-        </button>
+        </div>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src="scripts.js"> </script>
+    <script src="js/scripts.js"> </script>
 </body>
 </html>
 

@@ -2,7 +2,7 @@ body {
     background: #E5E5E5;
 }
 
-button {
+li {
     border: none;
     width: 172px;
     height: 216px;
@@ -99,7 +99,7 @@ ion-icon {
 
 .selected {
     border: 5px #32B72F solid;
-    padding: 0 0 0 7px;
+    padding: 9px;
 }
 
 .selected ion-icon {

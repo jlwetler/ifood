@@ -30,8 +30,7 @@ function selectDish(classButton) {
     dish = document.querySelector(".selected .dish-item").innerHTML;
     const price = document.querySelector(".selected .dish-price").innerHTML;
     dishPrice = parseFloat(price);
-    const total = dishPrice + drinkPrice + dessertPrice;
-    totalPrice = total.toFixed(2);
+    totalPrice = dishPrice + drinkPrice + dessertPrice;
 }
 
 function selectDrink(classButton) {
@@ -56,8 +55,7 @@ function selectDrink(classButton) {
     drink = document.querySelector(".selected .drink-item").innerHTML;
     const price = document.querySelector(".selected .drink-price").innerHTML;
     drinkPrice = parseFloat(price);
-    const total = dishPrice + drinkPrice + dessertPrice;
-    totalPrice = total.toFixed(2);
+    totalPrice = dishPrice + drinkPrice + dessertPrice;
 }
 
 function selectDessert(classButton) {
@@ -82,14 +80,17 @@ function selectDessert(classButton) {
     dessert = document.querySelector(".selected .dessert-item").innerHTML;
     const price = document.querySelector(".selected .dessert-price").innerHTML;
     dessertPrice = parseFloat(price);
-    const total = dishPrice + drinkPrice + dessertPrice;
-    totalPrice = total.toFixed(2);
+    totalPrice = dishPrice + drinkPrice + dessertPrice;
 }
 
 function closeOrder(classButton) {
     if(counter === 3) {
-        nome = prompt("Digite o seu nome:");
-        address = prompt("Digite o seu endereço:");
+        while (nome === "" || nome === null) {
+            nome = prompt("Digite o seu nome:");
+        } 
+        while (address === "" || address === null) {
+            address = prompt("Digite o seu endereço:");
+        }
         
     const color = document.querySelector(".content");
     color.classList.add('opacity');
@@ -106,26 +107,23 @@ function closeOrder(classButton) {
     const dessertName = document.querySelector(".dessert-name");
     dessertName.innerHTML= dessert;
 
-    dishPrice = dishPrice.toFixed(2);
     const priceDish = document.querySelector(".order .dish-price");
-    priceDish.innerHTML=  "R$ " + dishPrice;
+    priceDish.innerHTML=  "R$ " + dishPrice.toFixed(2);;
 
-    drinkPrice = drinkPrice.toFixed(2);
     const priceDrink = document.querySelector(".order .drink-price");
-    priceDrink.innerHTML= "R$ " + drinkPrice;
+    priceDrink.innerHTML= "R$ " + drinkPrice.toFixed(2);;
 
-    dessertPrice = dessertPrice.toFixed(2);
     const priceDessert = document.querySelector(".order .dessert-price");
-    priceDessert.innerHTML=  "R$ " + dessertPrice;
+    priceDessert.innerHTML=  "R$ " + dessertPrice.toFixed(2);;
 
     const total = document.querySelector(".total");
-    total.innerHTML =  "R$ " + totalPrice;
+    total.innerHTML =  "R$ " + totalPrice.toFixed(2);
     }
 }
 
 function sendOrder () {
     let celular = "5527996031184";
-    let texto = "Olá, gostaria de fazer o pedido: \n - Prato: " + dish + "\n - Bebida: " + drink + "\n - Sobremesa: " + dessert + "\n Total: R$ " + totalPrice + "\n \n Nome: " + nome + "\n Endereço: " + address;
+    let texto = "Olá, gostaria de fazer o pedido: \n- Prato: " + dish + "\n- Bebida: " + drink + "\n- Sobremesa: " + dessert + "\nTotal: R$ " + totalPrice.toFixed(2) + "\n \nNome: " + nome + "\nEndereço: " + address;
     texto = window.encodeURIComponent(texto);
 
     window.open("https://wa.me/" + celular + "?text=" + texto);
